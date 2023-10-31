@@ -1,0 +1,26 @@
+# Arquivos de dependência e módulos do Node.js
+node_modules/
+
+# Arquivos gerados durante a construção ou compilação
+build/
+dist/
+*.log
+
+# Variáveis de ambiente
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Arquivos de cache ou dados temporários
+.cache/
+.tmp/
+*.swp
+
+# Arquivos de configuração específicos do desenvolvedor
+.vscode/
+.idea/
+
+# Arquivos de compilação de TypeScript
+*.d.ts
+*.js.map
