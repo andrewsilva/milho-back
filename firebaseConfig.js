@@ -3,13 +3,13 @@ const firebase = require("firebase/app");
 require("firebase/database");
 
 const config = {
-  apiKey: "AIzaSyDMsq7pz55UD6HPJogZaUQ_qTy09xzMyzY",
-  authDomain: "milho-c89cb.firebaseapp.com",
-  projectId: "milho-c89cb",
-  storageBucket: "milho-c89cb.appspot.com",
-  messagingSenderId: "213770553121",
-  appId: "1:213770553121:web:922a76da26d988d947e060",
-  measurementId: "G-EVZWZCRK7V"
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID,
+  measurementId: process.env.FIREBASE_MEASUREMENT_ID
 };
 
 firebase.initializeApp(config);
